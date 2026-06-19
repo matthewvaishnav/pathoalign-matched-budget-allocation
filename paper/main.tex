@@ -117,17 +117,28 @@ Budget & Contrast & Mean diff. & CI low & CI high & $p$ \\
 \end{minipage}
 \end{center}
 
+\clearpage
+\onecolumn
+\RaggedRight
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.32em}
+
+\clearpage
+\onecolumn
+\RaggedRight
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.32em}
+
 \section{Budget Doubling}
 
 The second question asks whether increasing the total pair-presentation budget improves the biological score. Doubling from 6,400 to 12,800 was positive for every allocation and for the overall matched comparison.
 
 \begin{center}
-\begin{minipage}{0.98\linewidth}
+\begin{minipage}{0.78\linewidth}
 \centering
 \captionof{table}{Budget-doubling effects: 12,800 minus 6,400.}
 \label{tab:doubling}
-\footnotesize
-\resizebox{0.98\linewidth}{!}{%
+\small
 \begin{tabular}{lrrrr}
 \toprule
 Scope & Pairs & Mean diff. & CI low & $p$ \\
@@ -137,15 +148,15 @@ By allocation & 100 & +0.035189 & +0.026867 & 0.001953 \\
 By allocation & 200 & +0.036034 & +0.026404 & 0.001953 \\
 Overall & All & +0.037357 & +0.030315 & 0.001953 \\
 \bottomrule
-\end{tabular}}
+\end{tabular}
 \end{minipage}
 \end{center}
 
 \section{Interpretation}
 
-The matched-budget results support a resource-allocation principle for PathoAlign. At fixed total pair-presentation budget, increasing unique biological pair diversity improves biological consistency and factor separation more than repeatedly presenting a small anchor set. The improvement is clearest when comparing 200 pairs against 50 pairs. The small 200-minus-100 contrasts indicate diminishing returns beyond 100 pairs in this grid.
+The matched-budget results support a resource-allocation principle for PathoAlign. At fixed total pair-presentation budget, increasing unique biological pair diversity improves biological consistency and factor separation more than repeatedly presenting a small anchor set. The clearest allocation contrast is 200 pairs versus 50 pairs at budget 6,400. The much smaller 200-minus-100 contrasts indicate diminishing returns beyond 100 pairs in this grid.
 
-The result should not be interpreted as a universal law for all datasets or encoders. It is a controlled allocation study under the PathoAlign evaluation design. Its role is to constrain training-budget choices and motivate future external validation, not to claim diagnostic performance.
+This result should not be interpreted as a universal law for all datasets or encoders. It is a controlled allocation study under the PathoAlign evaluation design. Its role is to constrain training-budget choices, not to claim diagnostic performance.
 
 \section{Reproducibility and Claim Boundary}
 
@@ -153,6 +164,6 @@ The accompanying repository contains the frozen CSV evidence tables, a verificat
 
 \section{Conclusion}
 
-Under matched total pair-presentation budget, PathoAlign improved more when the budget was allocated toward broader biological pair diversity than when it was concentrated into repeated anchors. The strongest allocation contrast was 200 versus 50 pairs at budget 6,400. Budget doubling produced positive effects across all allocations. These findings define a bounded resource-allocation result for PathoAlign training design.
+Under matched total pair-presentation budget, PathoAlign improved more when the budget was allocated toward broader biological pair diversity than when it was concentrated into repeated anchors. The strongest allocation contrast was 200 versus 50 pairs at budget 6,400. Budget doubling produced positive effects across all allocations.
 
 \end{document}
