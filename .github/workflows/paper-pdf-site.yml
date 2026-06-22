@@ -1,4 +1,4 @@
-name: Build and deploy matched-budget PDF
+﻿name: Build and deploy pair-repeat PDF
 
 on:
   push:
@@ -11,7 +11,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: matched-budget-paper-pages
+  group: pair-repeat-paper-pages
   cancel-in-progress: false
 
 jobs:
@@ -33,18 +33,18 @@ jobs:
       - name: Create PDF site files
         run: |
           mkdir -p paper_pdf_site
-          cp paper/main.pdf paper_pdf_site/pathoalign-matched-budget-allocation.pdf
+          cp paper/main.pdf paper_pdf_site/pathoalign-pair-repeat-allocation.pdf
           touch paper_pdf_site/.nojekyll
           cat > paper_pdf_site/index.html <<'HTML'
           <!doctype html>
           <html lang="en">
           <head>
             <meta charset="utf-8">
-            <meta http-equiv="refresh" content="0; url=./pathoalign-matched-budget-allocation.pdf">
-            <title>PathoAlign matched-budget allocation</title>
+            <meta http-equiv="refresh" content="0; url=./pathoalign-pair-repeat-allocation.pdf">
+            <title>PathoAlign pair-repeat allocation</title>
           </head>
           <body>
-            <p><a href="./pathoalign-matched-budget-allocation.pdf">Open the PDF</a></p>
+            <p><a href="./pathoalign-pair-repeat-allocation.pdf">Open the PDF</a></p>
           </body>
           </html>
           HTML
@@ -64,3 +64,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
