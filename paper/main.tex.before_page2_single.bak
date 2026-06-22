@@ -1,4 +1,4 @@
-﻿\documentclass[10pt]{article}
+\documentclass[10pt]{article}
 
 \usepackage[letterpaper,margin=1in]{geometry}
 \usepackage{times}
@@ -24,14 +24,14 @@
 
 \captionsetup{font=small,labelfont=bf,skip=3pt}
 
-\title{Pair-Repeat Allocation Effects in PathoAlign\\
+\title{Matched-Budget Allocation Effects in PathoAlign\\
 Pair-Diversity and Anchor-Repetition Control}
 
 \author{
 Matthew Vaishnav\\
 Independent Researcher\\
 Kitchener-Waterloo, Canada\\
-\texttt{github.com/matthewvaishnav/pathoalign-pair-repeat-allocation}
+\texttt{github.com/matthewvaishnav/pathoalign-matched-budget-allocation}
 }
 
 \date{}
@@ -65,7 +65,7 @@ Paired-acquisition objectives depend not only on the total number of pair presen
 
 This study isolates that allocation question. The total pair-presentation budget is held fixed while the number of unique biological pairs and requested anchor repetitions are varied inversely.
 
-\section{Pair-Repeat Design}
+\section{Matched-Budget Design}
 
 I evaluate two total pair-presentation budgets: 6,400 and 12,800. Within each budget, the allocation grid uses 50, 100, and 200 unique biological pairs. Requested anchor repetitions are set so that total pair presentations remain matched within each budget.
 
@@ -123,12 +123,6 @@ Budget & Contrast & Mean diff. & CI low & CI high & $p$ \\
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0.32em}
 
-\clearpage
-\onecolumn
-\RaggedRight
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{0.32em}
-
 \section{Budget Doubling}
 
 The second question asks whether increasing the total pair-presentation budget improves the biological score. Doubling from 6,400 to 12,800 was positive for every allocation and for the overall matched comparison.
@@ -154,7 +148,7 @@ Overall & All & +0.037357 & +0.030315 & 0.001953 \\
 
 \section{Interpretation}
 
-The pair-repeat results support a resource-allocation principle for PathoAlign. At fixed total pair-presentation budget, increasing unique biological pair diversity improves biological consistency and factor separation more than repeatedly presenting a small anchor set. The clearest allocation contrast is 200 pairs versus 50 pairs at budget 6,400. The much smaller 200-minus-100 contrasts indicate diminishing returns beyond 100 pairs in this grid.
+The matched-budget results support a resource-allocation principle for PathoAlign. At fixed total pair-presentation budget, increasing unique biological pair diversity improves biological consistency and factor separation more than repeatedly presenting a small anchor set. The clearest allocation contrast is 200 pairs versus 50 pairs at budget 6,400. The much smaller 200-minus-100 contrasts indicate diminishing returns beyond 100 pairs in this grid.
 
 This result should not be interpreted as a universal law for all datasets or encoders. It is a controlled allocation study under the PathoAlign evaluation design. Its role is to constrain training-budget choices, not to claim diagnostic performance.
 
@@ -167,4 +161,3 @@ The accompanying repository contains the frozen CSV evidence tables, a verificat
 Under matched total pair-presentation budget, PathoAlign improved more when the budget was allocated toward broader biological pair diversity than when it was concentrated into repeated anchors. The strongest allocation contrast was 200 versus 50 pairs at budget 6,400. Budget doubling produced positive effects across all allocations.
 
 \end{document}
-

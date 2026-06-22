@@ -1,6 +1,6 @@
-# PathoAlign matched-budget allocation study
+﻿# PathoAlign pair-repeat allocation study
 
-This repository is a focused study package for the PathoAlign matched-budget allocation experiment.
+This repository is a focused study package for the PathoAlign pair-repeat allocation experiment.
 
 The question is narrow: under matched total pair-presentation budget, does spending budget on more unique biological pairs improve the biological representation more than spending the same budget on repeated anchors?
 
@@ -19,3 +19,4 @@ This is a representation-identifiability and resource-allocation study. It is no
 ## Main research hub
 
 https://github.com/matthewvaishnav/computational-pathology-research
+
