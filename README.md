@@ -4,7 +4,7 @@ This repository is a focused study package for the PathoAlign pair-repeat alloca
 
 ## Positioning
 
-PathoAlign's main claim is a representation-identifiability claim: paired acquisitions can be used to factor frozen pathology embeddings into a scanner-suppressed tissue factor and an acquisition-specific factor.
+I use PathoAlign to make a representation-identifiability claim: paired acquisitions can be used to factor frozen pathology embeddings into a scanner-suppressed tissue factor and an acquisition-specific factor.
 
 This repository tests a narrower resource-allocation question inside that framework: when the total number of pair presentations is held fixed, does the factorization benefit more from seeing more unique biological pairs or from repeatedly anchoring fewer pairs?
 
@@ -16,7 +16,7 @@ Under matched total pair-presentation budget, does spending budget on more uniqu
 
 Under matched total pair-presentation budgets of 6,400 and 12,800 pair presentations, increasing biological pair diversity improves PathoAlign biological consistency and factor separation relative to low-diversity/high-repetition anchor allocation, with a plateau from 100 to 200 pairs. Doubling the total budget from 6,400 to 12,800 also improves the biological score.
 
-This supports the interpretation that PathoAlign is learning from diverse paired biological correspondences rather than merely exploiting repeated anchors or a degenerate pair-memorization shortcut.
+I interpret this as evidence that PathoAlign benefits from diverse paired biological correspondences rather than merely exploiting repeated anchors or a degenerate pair-memorization shortcut.
 
 This is a representation-identifiability and resource-allocation study. It is research-only and does not support clinical or diagnostic claims.
 
