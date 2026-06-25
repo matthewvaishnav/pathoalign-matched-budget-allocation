@@ -33,18 +33,18 @@ jobs:
       - name: Create PDF site files
         run: |
           mkdir -p paper_pdf_site
-          cp paper/main.pdf paper_pdf_site/pathoalign-pair-repeat-allocation.pdf
+          cp paper/main.pdf paper_pdf_site/paired-acquisition-factorization-allocation.pdf
           touch paper_pdf_site/.nojekyll
           cat > paper_pdf_site/index.html <<'HTML'
           <!doctype html>
           <html lang="en">
           <head>
             <meta charset="utf-8">
-            <meta http-equiv="refresh" content="0; url=./pathoalign-pair-repeat-allocation.pdf">
-            <title>PathoAlign pair-repeat allocation</title>
+            <meta http-equiv="refresh" content="0; url=./paired-acquisition-factorization-allocation.pdf">
+            <title>Paired-Acquisition Neural Factorization pair-repeat allocation</title>
           </head>
           <body>
-            <p><a href="./pathoalign-pair-repeat-allocation.pdf">Open the PDF</a></p>
+            <p><a href="./paired-acquisition-factorization-allocation.pdf">Open the PDF</a></p>
           </body>
           </html>
           HTML
