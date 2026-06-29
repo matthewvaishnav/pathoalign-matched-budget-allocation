@@ -1,9 +1,8 @@
 ﻿\documentclass[10pt]{article}
 
-\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage[letterpaper,top=1.02in,bottom=0.92in,left=1.50in,right=1.50in]{geometry}
 \usepackage{times}
 \usepackage{microtype}
-\usepackage{ragged2e}
 \usepackage{amsmath,amssymb}
 \usepackage{booktabs}
 \usepackage{graphicx}
@@ -12,52 +11,52 @@
 \usepackage{url}
 \usepackage[hidelinks]{hyperref}
 
-\setlength{\columnsep}{0.25in}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{0.28em}
+\setlength{\parskip}{0.54em}
 \emergencystretch=2em
 
 \titleformat{\section}
   {\large\bfseries\raggedright}
   {\thesection}{1em}{}
-\titlespacing*{\section}{0pt}{1.2em}{0.55em}
+\titlespacing*{\section}{0pt}{1.35em}{0.65em}
 
-\captionsetup{font=small,labelfont=bf,skip=3pt}
-
-\title{Pair-Repeat Allocation Effects in Paired-Acquisition Neural Factorization\\
-Pair-Diversity and Anchor-Repetition Control}
-
-\author{
-Matthew Vaishnav\\
-Independent Researcher\\
-Kitchener-Waterloo, Canada\\
-\href{https://github.com/matthewvaishnav/paired-acquisition-factorization-allocation}{Repository: paired-acquisition-factorization-allocation}
-}
-
-\date{}
+\captionsetup{font=small,labelfont=bf,skip=3pt,hypcap=false}
 
 \begin{document}
 
-\twocolumn[
-\begin{@twocolumnfalse}
-\maketitle
+\begin{center}
+\rule{\textwidth}{4pt}
+\vspace{0.22in}
+
+{\LARGE\bfseries Pair-Repeat Allocation Effects in\\
+Paired-Acquisition Neural Factorization\\
+Pair-Diversity and Anchor-Repetition Control\par}
+
+\vspace{0.18in}
+\rule{\textwidth}{0.4pt}
+\vspace{0.32in}
+
+{\bfseries Matthew Vaishnav}\par
+Independent Researcher\par
+Kitchener-Waterloo, Canada\par
+\texttt{paired-acquisition-factorization-allocation}
+\end{center}
+
+\vspace{0.28in}
 
 \begin{center}
 {\bfseries Abstract}
 \end{center}
-{\small
-\RaggedRight
+\begin{center}
+\begin{minipage}{0.82\textwidth}
+\small
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{0.15em}
+\setlength{\parskip}{0.25em}
 \noindent Paired-Acquisition Neural Factorization uses paired-region information to learn scanner-aware biological representations. A practical question is whether a fixed pair-presentation budget is better spent on many unique biological pairs or on repeated exposure to fewer anchor pairs. I evaluate this tradeoff under matched total pair-presentation budgets of 6,400 and 12,800 presentations. Across 40 evaluation cells per allocation, increasing biological pair diversity from 50 to 100 or 200 pairs improved the mean universal biological score and factor-separation score. The strongest seed-blocked effect occurred at budget 6,400 for 200 pairs versus 50 pairs, while 200 versus 100 pairs showed a small plateau effect. Doubling the total budget from 6,400 to 12,800 produced positive effects across all allocations. These results support a bounded resource-allocation claim: under matched total budget, Paired-Acquisition Neural Factorization benefits more from biological pair diversity than from repeated anchors alone, with diminishing returns beyond 100 pairs.
-\par
-}
+\end{minipage}
+\end{center}
 
-\vspace{0.15in}
-\end{@twocolumnfalse}
-]
-
-\RaggedRight
+\vspace{0.28in}
 
 \section{Introduction}
 
@@ -117,17 +116,8 @@ Budget & Contrast & Mean diff. & CI low & CI high & $p$ \\
 \end{minipage}
 \end{center}
 
-\clearpage
-\onecolumn
-\RaggedRight
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{0.32em}
-
-\clearpage
-\onecolumn
-\RaggedRight
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{0.32em}
+\setlength{\parskip}{0.54em}
 
 \section{Budget Doubling}
 
