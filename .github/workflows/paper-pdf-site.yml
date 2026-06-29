@@ -40,8 +40,13 @@ jobs:
           <html lang="en">
           <head>
             <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
             <meta http-equiv="refresh" content="0; url=./paired-acquisition-factorization-allocation.pdf">
+            <link rel="canonical" href="./paired-acquisition-factorization-allocation.pdf">
             <title>Paired-Acquisition Neural Factorization pair-repeat allocation</title>
+            <script>
+              window.location.replace("./paired-acquisition-factorization-allocation.pdf");
+            </script>
           </head>
           <body>
             <p><a href="./paired-acquisition-factorization-allocation.pdf">Open the PDF</a></p>
