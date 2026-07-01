@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: Pair-Repeat Allocation Study for Paired-Acquisition Neural Factorization
+message: If you use this research artifact, please cite the repository.
+authors:
+  - family-names: Vaishnav
+    given-names: Matthew
+repository-code: https://github.com/matthewvaishnav/paired-acquisition-factorization-allocation
+license: MIT
+version: 0.1.0
+abstract: >-
+  Standalone research artifact for the pair-repeat allocation study in
+  Paired-Acquisition Neural Factorization, testing biological pair diversity
+  versus repeated-anchor allocation under matched pair-presentation budgets.

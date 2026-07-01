@@ -15,3 +15,9 @@ Evidence tables:
 Main research hub:
 
 https://github.com/matthewvaishnav/computational-pathology-research
+
+## Claim boundary
+
+This is a representation-identifiability and paired-acquisition resource
+allocation study. It is research only and is not clinical, diagnostic, or
+patient-care software.
